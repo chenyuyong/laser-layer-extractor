@@ -1,0 +1,5 @@
+{
+  "name": "Laser Layer Extractor",
+  "description": "Extract 5 color layers from an image for laser cutting with double frames and hollow template logic for physical stacking.",
+  "requestFramePermissions": []
+}
