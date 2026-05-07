@@ -39,7 +39,8 @@ export default function HomePage() {
     if (!image) return;
     setGeneratingImage(true);
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      console.log(import.meta.env.VITE_API_KEY , "import.meta.env.VITE_API_KEY")
+      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
       const parts: any[] = [];
       
       const mimeTypeMatch = image.match(/^data:(.*?);base64,/);
