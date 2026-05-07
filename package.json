@@ -4,8 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
+    "dev": "vite --port=3000 --host=0.0.0.0 --mode development",
+    "test": "vite --port=3000 --host=0.0.0.0 --mode test",
+    "prod": "vite --port=3000 --host=0.0.0.0 --mode production",
+    "build:dev": "vite build --mode development",
+    "build:test": "vite build --mode test",
+    "build:prod": "vite build --mode production",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
